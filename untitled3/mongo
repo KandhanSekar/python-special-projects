@@ -1,0 +1,33 @@
+class Human:
+    name=''
+    phoneno=0
+    def __init__(self,a,b):
+        self.name=a
+        self.phoneno=b
+
+    def getname(self):
+        return self.name
+
+    def getphoneno(self):
+        return self.phoneno
+
+
+class Man(Human):
+    thing='beard'
+    def __init__(self,a,b):
+        self.name=a
+        self.phoneno=b
+    def getthing(self):
+        return self.thing
+
+m=Man('kandhan',3)
+
+print(m.getthing())
+
+
+
+
+
+
+print(m.getname())
+print(m.getphoneno())

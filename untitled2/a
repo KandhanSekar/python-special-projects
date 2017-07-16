@@ -1,0 +1,27 @@
+import fileinput
+
+l=[]
+currdep=0
+size=0
+def store(name,leng):
+    print name
+    if leng>=currdep:
+        size = len(name)
+        if l[leng]>size:
+                l[leng]=size
+    else:
+        del list[-1]
+    print list
+
+
+
+lines = []
+
+while True:
+    line = raw_input()
+    if line:
+        a=line.count(' ')
+        print a, line
+        store(line,a)
+    else:
+        break
